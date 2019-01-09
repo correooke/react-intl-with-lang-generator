@@ -1,6 +1,6 @@
-import { Component } from 'react';
+import React, { Component } from 'react';
 import messages from './../languages/messages';
-import { injectIntl } from 'react-intl';
+import { injectIntl, FormattedMessage } from 'react-intl';
 
 class PageTitle extends Component {
 
@@ -21,7 +21,15 @@ class PageTitle extends Component {
 
     render() {
         return (
-            null
+            <div className="header">
+                <h1>
+                    <FormattedMessage 
+                        id='learnTitle' 
+                        defaultMessage='Aprender react-intl' 
+                    />
+                </h1>
+                <h2>i18n / ReactIntl</h2>
+            </div>
         );
     }
 }

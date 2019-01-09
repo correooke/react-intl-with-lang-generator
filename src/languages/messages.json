@@ -1,0 +1,47 @@
+[
+  {
+    "id": "es",
+    "defaultMessage": "Español",
+    "filepath": "./src/components/Configuration.js"
+  },
+  {
+    "id": "en",
+    "defaultMessage": "Ingles",
+    "filepath": "./src/components/Configuration.js"
+  },
+  {
+    "id": "language",
+    "defaultMessage": "Lenguaje:",
+    "filepath": "./src/components/Configuration.js"
+  },
+  {
+    "id": "selectedLanguage",
+    "defaultMessage": "Se ha seleccionado {language} como lenguaje de la aplicación",
+    "filepath": "./src/components/Configuration.js"
+  },
+  {
+    "id": "details",
+    "defaultMessage": "Detalles:",
+    "filepath": "./src/components/Item.js"
+  },
+  {
+    "id": "learnTitle",
+    "defaultMessage": "Aprender react-intl",
+    "filepath": "./src/components/PageTitle.js"
+  },
+  {
+    "id": "search",
+    "defaultMessage": "Búsqueda",
+    "filepath": "./src/components/Search.js"
+  },
+  {
+    "id": "results",
+    "defaultMessage": "Resultados de la búsqueda",
+    "filepath": "./src/Home.js"
+  },
+  {
+    "id": "foundTecnologies",
+    "defaultMessage": "- {count, plural, =0 {Ninguna tecnología} one {Una tecnología} other {Son {count} tecnologías}}",
+    "filepath": "./src/Home.js"
+  }
+]

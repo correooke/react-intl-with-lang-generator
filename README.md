@@ -28,3 +28,9 @@ https://github.com/facebook/create-react-app/issues/1227#issuecomment-296316167
 
 $ yarn add react-intl-cra --dev
 $ react-intl-cra './src/**/*.js' -o messages.json
+
+
+Con babel-preset-react-app: npm install --save-dev babel-cli babel-preset-react-app babel-plugin-react-intl
+
+
+"lang": ".\\node_modules\\.bin\\react-intl-cra ./src/**/*.js -o ./src/languages/es/messages.json"

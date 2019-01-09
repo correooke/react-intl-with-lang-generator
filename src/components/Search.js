@@ -1,12 +1,11 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import messages from '../languages/messages';
 
 const Search = ({search, onChangeSearch}) => {
 
     return (
         <div className={`search`}>
-            <FormattedMessage {...messages.search}/>
+            <FormattedMessage id='search' defaultMessage='Búsqueda'/>
             <input
                 type="text"
                 value={search}

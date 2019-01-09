@@ -2,12 +2,10 @@ import React from 'react';
 import {
     FormattedMessage,
     FormattedNumber,
-    FormattedPlural,
     FormattedDate,
     FormattedRelative,
     FormattedTime,
 } from 'react-intl';
-import messages from './languages/messages';
 import Search from './components/Search';
 import List from './components/List';
 import Configuration from './components/Configuration';
@@ -16,7 +14,6 @@ import PageTitle from './components/PageTitle';
 const Home = ({start, search, items, lang, onChangeLang, onChangeSearch}) => {
     return (
         <div className={`app`}>
-            <PageTitle />
             <div className="timer">
                 <FormattedDate value={Date.now()}/>
                 <FormattedTime value={Date.now()}/>
@@ -24,27 +21,25 @@ const Home = ({start, search, items, lang, onChangeLang, onChangeSearch}) => {
             <div className="timer start">
                 <FormattedRelative value={start} updateInterval={1000}/>
             </div>
-            <div className="header">
-                <h1><FormattedMessage {...messages.learnTitle}/></h1>
-                <h2>i18n / ReactIntl</h2>
-            </div>
+            <PageTitle />
             <Configuration lang={lang} onChangeLang={onChangeLang}/>
             <Search search={search} onChangeSearch={onChangeSearch}/>
             <div className="results">
-                <FormattedMessage {...messages.results}>
+                <FormattedMessage id='results' defaultMessage='Resultados de la búsqueda'>
                     {text => <h2>{text}</h2>}
                 </FormattedMessage>
                 <h4>
                     <FormattedNumber value={items.length}/>
                     <span> </span>
-                    <FormattedPlural
-                        value={items.length}
-                        one={< FormattedMessage {
-                        ...messages.technology
-                    } />}
-                        other={< FormattedMessage {
-                        ...messages.technologies
-                    } />}/>
+                    <FormattedMessage
+                        id="foundTecnologies"
+                        defaultMessage={`- {count, plural, 
+                            =0 {Ninguna tecnología}
+                            one {Una tecnología} 
+                            other {Son {count} tecnologías}
+                        }`}
+                        values={{count: items.length}} 
+                    />
                 </h4>
             </div>
             <List items={items}/>

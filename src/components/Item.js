@@ -1,6 +1,5 @@
 import React from 'react';
 import {FormattedMessage} from 'react-intl';
-import messages from '../languages/messages';
 
 const Item = ({image, title, details}) => {
     return (
@@ -10,7 +9,10 @@ const Item = ({image, title, details}) => {
                 <h3>{title}</h3>
                 <p>
                     <strong>
-                        <FormattedMessage {...messages.details}/>
+                        <FormattedMessage 
+                            id='details'
+                            defaultMessage='Detalles: '
+                        />
                     </strong>
                     {details}</p>
             </div>
