@@ -15,7 +15,7 @@ react-intl tiene un conjunto de componentes y una función que expone utilidades
 
 Para poder acceder a una demo en ejecución de este ejemplo, se puede ingresar a la url:
 
-https://codesandbox.io/s/github/correooke/react-intl
+https://codesandbox.io/s/github/correooke/react-intl-with-lang-generator
 
 ### Autor: Emiliano Ocariz
 
