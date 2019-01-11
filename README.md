@@ -11,6 +11,22 @@ Se refiere a la palabra internationalization en inglés. El código se construye
 La librería más utilizada para realizar esta tarea es react-intl, desarrollada por Yahoo. 
 react-intl tiene un conjunto de componentes y una función que expone utilidades para realizar la traducción facilitada, manejo de fechas, intervalos de tiempo, números. Los componentes cumplen las mismas funcionalidades que la API basada en funciones, pero son recomendadas desde la documentación de la librería ya que tienen ventajas por adecuarse mejor al paradigma de desarrollo de React (basado en componentes) y mejoras de eficiencia, evitando renderizaciones adicionales cada vez que fuese posible. 
 
+Los componentes principales son: 
+ - FormattedMessage
+ - FormattedNumber
+ - FormattedDate
+ - FormattedTime
+ - FormattedRelative
+
+Nota:
+Para trabajar con Currencies se utiliza FormattedNumber con style="currency" y otra propiedad que indica la moneda utilizada (https://www.currency-iso.org/dam/downloads/lists/list_one.xml)
+
+<FormattedNumber
+  style="currency"
+  currency="EUR"
+  value={100}
+/>
+
 ## Live Demo
 
 Para poder acceder a una demo en ejecución de este ejemplo, se puede ingresar a la url:
