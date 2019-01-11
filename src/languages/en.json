@@ -1,0 +1,11 @@
+{
+  "es": "Español",
+  "en": "Ingles",
+  "language": "Lenguaje:",
+  "selectedLanguage": "Se ha seleccionado {language} como lenguaje de la aplicación",
+  "details": "Detalles:",
+  "learnTitle": "Aprender react-intl",
+  "search": "Búsqueda",
+  "results": "Resultados de la búsqueda",
+  "foundTecnologies": "- {count, plural, =0 {Ninguna tecnología} one {Una tecnología} other {Son {count} tecnologías}}"
+}

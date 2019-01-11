@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
-import messages from './../languages/messages';
-import { injectIntl, FormattedMessage } from 'react-intl';
+import { injectIntl, FormattedMessage, defineMessages } from 'react-intl';
+
+const messages = defineMessages({
+    learnTitle: {
+        id: 'learnTitle',
+        defaultMessage: 'Aprender react-intl'
+    }
+});
 
 class PageTitle extends Component {
 
@@ -24,8 +30,7 @@ class PageTitle extends Component {
             <div className="header">
                 <h1>
                     <FormattedMessage 
-                        id='learnTitle' 
-                        defaultMessage='Aprender react-intl' 
+                        {...messages.learnTitle}
                     />
                 </h1>
                 <h2>i18n / ReactIntl</h2>

@@ -13,7 +13,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lang": ".\\node_modules\\.bin\\react-intl-cra ./src/**/*.js -o ./src/languages/messages.json"
+    "lang": ".\\node_modules\\.bin\\react-intl-cra ./src/**/*.js -o ./build/messages/es.json && node .\\scripts\\translate.js"
   },
   "eslintConfig": {
     "extends": "react-app"

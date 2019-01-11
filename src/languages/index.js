@@ -1,6 +1,6 @@
 
-import en from './en/index';
-import es from './es/index';
+import en from './en.json';
+import es from './es.json';
 
 const languages = { en, es };
 
