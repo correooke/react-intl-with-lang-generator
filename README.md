@@ -27,6 +27,10 @@ Para trabajar con Currencies se utiliza FormattedNumber con style="currency" y o
   value={100}
 />
 
+## Tool 
+
+Para la traducción automática del lenguaje y manejo de traducciones aprobadas o no, se puede utilizar Babel Edit. https://www.codeandweb.com/babeledit
+
 ## Live Demo
 
 Para poder acceder a una demo en ejecución de este ejemplo, se puede ingresar a la url:
